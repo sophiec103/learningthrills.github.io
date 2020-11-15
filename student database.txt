@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<div class="header">
+  <h1>Teach Assist</h1>
+  <p>Motivating students to care about learning skillz.</p>
+</div>
+
+<style>
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  background: #F1B900; /* pencil yellow background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+</style>
+
+<div class="navbar">
+  <a href="./website.html">Home</a>
+  <a href="#">Student Database</a>
+  <a href="./badges.html">Badges</a>
+  <a href="./login%20page.html" class="right">Log out</a>
+</div>
+
+<style>
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+</style>
+
+<style>
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 100px; /* Some padding */
+  text-align: center;
+  font-size: 60px
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+ <head>
+      <meta charset="utf-8">
+      <title>Student Database</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/handsontable/0.35.1/handsontable.min.css" rel="stylesheet">
+  </head>
+     <main role="main" class="container">
+      <h1>Student Database</h1>
+        <p class="lead">Week of November 6, 2020</p>    
+      <div class="container welcome-div">      
+           <div id="student">
+           </div>
+      </div>    
+    </main> 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handsontable/0.35.1/handsontable.min.js"></script>  
+    <script type="text/javascript">
+          var data = [{
+          "first_name": "Jaden ",
+          "last_name": "Aaronson",
+          "notes": "Jaden had trouble submitting his work \non time and working with his classmates, \nbut he stayed on task very well.",
+          "responsibility": "4",
+          "organization": "3",
+	  "initiative": "5",
+	  "independentwork": "8",
+	  "collaboration": "8",
+	  "selfregulation": "6"
+
+        }, {
+          "first_name": "Erika",
+          "last_name": "Chan",
+          "notes": "Erika had trouble staying organized this \nweek, and did not want to work with her \nclassmates.",
+          "responsibility": "6",
+          "organization": "3",
+	  "initiative": "6",
+	  "independentwork": "8",
+	  "collaboration": "3",
+	  "selfregulation": "4"
+ 	}, {
+          "first_name": "Sam",
+          "last_name": "Locke",
+          "notes": "Sam’s class materials were slightly \ndisorganized, but they were very well \nbehaved.",
+          "responsibility": "6",
+          "organization": "5",
+	  "initiative": "7",
+	  "independentwork": "8",
+	  "collaboration": "8",
+	  "selfregulation": "6"
+	 }, {
+          "first_name": "Esther",
+          "last_name": "Man",
+          "notes": "Esther had trouble working with her \ngroupmates and got distracted speaking \nwith her friends. Her materials were very \nwell-organized.",
+          "responsibility": "6",
+          "organization": "8",
+	  "initiative": "6",
+	  "independentwork": "4",
+	  "collaboration": "3",
+	  "selfregulation": "3"
+        }, {
+          "first_name": "Albert",
+          "last_name": "Wilson",
+          "notes": "Albert was very well organized, but \nneeded reminders starting tasks and \nstaying on task.",
+          "responsibility": "7",
+          "organization": "8",
+	  "initiative": "4",
+	  "independentwork": "4",
+	  "collaboration": "7",
+	  "selfregulation": "5"
+        }]
+        var container = document.getElementById('student');
+        var hot = new Handsontable(container, {
+          data: data,
+          rowHeaders: true,
+          colHeaders: false,
+          colHeaders: ['First name', 'Last name', 'Notes', 'Responsibility', 'Organization', 'Initiative', 'Independent Work', 'Collaboration', 'Self-Regulation'],
+          columnSorting: true,
+          sortIndicator: true
+        });        
+    </script>  
+
+</body>
+<tail>
+    <ul class="space"> 
+    </ul>                   
+</tail>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+
+<div class="header">
+  <h1>Teach Assist</h1>
+  <p>Motivating students to care about learning skillz.</p>
+</div>
+
+<style>
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  background: #F1B900; /* pencil yellow background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+</style>
+
+<div class="navbar">
+  <a href="./website.html">Home</a>
+  <a href="./student%20database.html">Student Database</a>
+  <a href="./badges.html">Badges</a>
+  <a href="./login%20page.html" class="right">Log out</a>
+</div>
+
+<style>
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+</style>
+
+<style>
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+
+<h1>Badge Selection</h1>
+
+<p>Choose a Badge to Award!</p>
+
+<script>
+function toggleImage1() {
+   var img1 = "RRa.png";
+   var img2 = "RR.png";
+   
+   var imgElement = document.getElementById('toggleImage1');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+
+function toggleImage2() {
+   var img1 = "AOa.png";
+   var img2 = "AO.png";
+   
+   var imgElement = document.getElementById('toggleImage2');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+
+function toggleImage3() {
+   var img1 = "INa.png";
+   var img2 = "IN.png";
+   
+   var imgElement = document.getElementById('toggleImage3');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+
+function toggleImage4() {
+   var img1 = "IIa.png";
+   var img2 = "II.png";
+   
+   var imgElement = document.getElementById('toggleImage4');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+
+function toggleImage5() {
+   var img1 = "CCa.png";
+   var img2 = "CC.png";
+   
+   var imgElement = document.getElementById('toggleImage5');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+
+function toggleImage6() {
+   var img1 = "SRa.png";
+   var img2 = "SR.png";
+   
+   var imgElement = document.getElementById('toggleImage6');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+
+</script>
+<input type="image" src="RR.png" width="150" height="150" id="toggleImage1" onclick="toggleImage1();"/>
+<input type="image" src="AO.png" width="150" height="150" id="toggleImage2" onclick="toggleImage2();"/>
+<input type="image" src="IN.png" width="150" height="150" id="toggleImage3" onclick="toggleImage3();"/>
+<input type="image" src="II.png" width="150" height="150" id="toggleImage4" onclick="toggleImage4();"/>
+<input type="image" src="CC.png" width="150" height="150" id="toggleImage5" onclick="toggleImage5();"/>
+<input type="image" src="SR.png" width="150" height="150" id="toggleImage6" onclick="toggleImage6();"/>
+
+
+</body>
+</html>
