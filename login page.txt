@@ -3,7 +3,7 @@
 <html>    
 <head>    
     <title>Login Form</title>    
-    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
 </head>    
 <body>    
     <h2>Login Page</h2><br>    
@@ -32,7 +32,7 @@ body
 {  
     margin: 0;  
     padding: 0;  
-    background-color:#FFC300;  
+    background-color:#ffca73;  
     font-family: 'Arial';  
 }  
 .login{  
@@ -41,7 +41,7 @@ body
         margin: auto;  
         margin: 20 0 0 450px;  
         padding: 80px;  
-        background: #FFA400;  
+        background: #FFC300;  
         border-radius: 15px ;  
           
 }  
@@ -84,9 +84,10 @@ span{
     font-size: 17px;  
 }  
 a{  
-    float: right;  
-    background-color: grey;  
+    float: right;   
 }  
+
+
 </style>
 
 </body>    
