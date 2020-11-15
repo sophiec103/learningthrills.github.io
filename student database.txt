@@ -12,13 +12,12 @@ body {
 </head>
 
 <div class="header">
-  <h1>Teach Assist</h1>
-  <p>Motivating students to care about learning skillz.</p>
+  <img src = "LearningThrills Logo.png" width="200" height="200"></img>
 </div>
 
 <style>
 .header {
-  padding: 80px; /* some padding */
+  padding: 25px; /* some padding */
   text-align: center; /* center the text */
   background: #F1B900; /* pencil yellow background */
   color: white; /* white text color */
@@ -118,8 +117,12 @@ body {
   </head>
      <main role="main" class="container">
       <h1>Student Database</h1>
-        <p class="lead">Week of November 6, 2020</p>    
-      <div class="container welcome-div">      
+	<div class>
+ 	 <a><b>Week of November 13, 2020</b></a>
+ 	 <a href="./student database previous.html">Previous Week</a>
+  	 <a href="./student database next.html">Next Week</a>
+	</div>
+      <div class="container welcome-div">           
            <div id="student">
            </div>
       </div>    
@@ -179,6 +182,16 @@ body {
 	  "independentwork": "4",
 	  "collaboration": "7",
 	  "selfregulation": "5"
+        }, {
+          "first_name": "",
+          "last_name": "",
+          "notes": "",
+          "responsibility": "",
+          "organization": "",
+	  "initiative": "",
+	  "independentwork": "",
+	  "collaboration": "",
+	  "selfregulation": ""
         }]
         var container = document.getElementById('student');
         var hot = new Handsontable(container, {
